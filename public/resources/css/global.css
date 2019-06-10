@@ -1,0 +1,315 @@
+html {
+    width: 100%;
+    height: 100%;
+    /*font-size: calc(10vw / 2.34375);*/
+}
+
+body {
+    font-family: 'PingFangSC-Regular', 'PingFang SC', 'Microsoft YaHei', 'Helvetica', 'Arial', 'Verdana';
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5 !important;
+}
+
+div {
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+}
+
+div, image, textarea, input, body, html, span {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    resize: none;
+    outline: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    /*margin: 0;*/
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /*margin: 0;*/
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+    height: 0;
+}
+
+.ant-modal-body {
+    padding: 0 !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*
+ * 基本页面布局样式page
+ */
+.page {
+    display: inline-table;
+    min-width: 800px;
+    width: 100%;
+    background-color: #F0F2F5;
+    min-height: calc(100vh - 256px);
+}
+
+.page-header {
+    padding: 16px 32px 16px 32px;
+    background: white;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.page-title {
+    margin-top: 24px;
+    margin-left: 24px;
+    padding: 16px 32px;
+    background: white;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.page-title-content {
+    background: #FFFFFF;
+    padding: 24px 32px 35px 32px;
+    min-height: 120px;
+    margin-left: 24px;
+    margin-top: 1px;
+    font-size: 14px;
+}
+
+.page-content-title {
+    margin-top: 24px;
+    margin-left: 24px;
+    padding: 16px 32px;
+    background: white;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.page-content {
+    background: #FFFFFF;
+    padding: 24px 32px 35px 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+}
+
+.page-content-transparent {
+    padding: 0;
+    background: transparent;
+}
+
+/*
+ * antd 样式覆盖
+ */
+.ant-btn {
+    line-height: 30px !important;
+}
+
+.ant-btn-sm {
+    line-height: unset !important;
+}
+
+.ant-menu {
+    /*background: #001529 !important;*/
+}
+
+.ant-modal-footer {
+    padding: 10px 24px !important;
+}
+
+.ant-menu-submenu-title {
+    margin: 0 !important;
+}
+
+.ant-card {
+    margin-bottom: 24px !important;
+}
+
+.ant-card-head {
+    padding: 0 32px;
+    height: auto !important;
+    line-height: unset !important;
+    min-height: 48px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 500;
+}
+
+.ant-card-head-title {
+    font-size: 16px !important;
+    padding: 16px 0;
+    align-items: center;
+}
+
+.ant-row {
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+}
+
+.ant-upload-list-item-name {
+    cursor: pointer;
+}
+
+.ant-form-item-label {
+    line-height: 32px !important;
+}
+
+.ant-form-item-control {
+    line-height: 32px !important;
+}
+
+.ant-badge-status-processing:after {
+    animation: none !important;
+}
+
+.header-dot .ant-badge-status-dot {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+/*底部控制*/
+.parking-foot {
+    padding: 0 16px;
+    margin: 24px 0 48px;
+    text-align: center;
+}
+
+.table-foot {
+    height: 53px;
+    line-height: 53px;
+    background: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+/*表格分页器*/
+.table_pagination {
+    margin-top: 13px !important;
+    float: right;
+}
+
+/*表格信息总条数*/
+.table_pagination_total {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-top: 18px;
+    margin-left: 12px;
+    float: left;
+}
+
+/*详情卡片*/
+.detail-card label {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+}
+
+.detail-card span {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 22px;
+}
+
+.detail-card .ant-btn span {
+    color: white;
+}
+
+.detail-card-col {
+    display: flex !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.detail-card-col span {;
+    display: block !important;
+    flex: 1;
+    word-break: break-all;
+}
+
+.detail-card-col label {
+    display: block !important;
+}
+
+/*复杂表单底部确认按钮*/
+.form-bottom-fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 56px;
+    line-height: 56px;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, .03);
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+    padding: 0 24px;
+    z-index: 9;
+    text-align: right;
+}
+
+/*文本超出部分显示省略号*/
+.textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*移除圣诞彩蛋*/
+.christmas.ant-btn-primary:before{
+    display: none !important;
+}
+
+/*高德地图maker内容样式*/
+.markerLngLat{
+    background-image: url("https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png");
+    height: 31px;
+    width: 19px;
+    cursor: pointer;
+    left: -1px;
+    text-align: center;
+    color: white;
+    font: 12px arial,simsun,sans-serif;
+    padding-top: 3px;
+}
+.markerContent{
+    position: absolute;
+    top: -30px;
+    color: #fff;
+    padding: 4px 10px;
+    box-shadow: 1px 1px 1px rgba(10, 10, 10, .2);
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: "PingFangSC-Regular";
+    background-color: #25A5F7;
+    border-radius: 3px;
+}
+.amap-copyright, .amap-logo{
+    display: none !important;
+}

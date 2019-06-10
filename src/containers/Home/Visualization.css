@@ -1,0 +1,6 @@
+.visualPanel{
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    transition: left 0.4s;
+}

@@ -1,0 +1,70 @@
+.roster_search_button {
+    width: 65px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+.roster_button_add {
+    height: 32px;
+    margin-right: 8px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+}
+
+.rosterManage-search-form .ant-form-item {
+    display: flex;
+}
+
+.rosterManage-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+}
+
+.rosterManage-search-form .ant-form-item-label {
+    min-width: 70px;
+}
+
+th.column-mobile, td.column-mobile {
+    min-width: 150px;
+}
+
+th.column-plateName, td.column-plateName {
+    min-width: 150px;
+}
+
+th.column-parkingName, td.column-parkingName {
+    width: 330px;
+}
+
+.column-parkingName {
+    width: 330px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th.column-rangeTime, td.column-rangeTime {
+    width: 240px;
+}
+
+th.column-sectionName {
+    width: 330px;
+}
+
+th.column-scheduleName, td.column-scheduleName {
+    width: 368px;
+}
+
+.column-scheduleName {
+    width: 368px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th.column-couponAmount, td.column-couponAmount {
+    min-width: 100px;
+}
+
+th.column-action-short, td.column-action-short {
+    min-width: 110px;
+}

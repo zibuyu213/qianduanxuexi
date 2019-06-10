@@ -1,0 +1,111 @@
+.infoName {
+    font-size: 14px;
+}
+
+.infoValue {
+    font-size: 14px;
+}
+
+.sectionDetails_number {
+    margin-top: 21px;
+}
+
+.SectionDetails_button_add {
+    float: right
+}
+
+.sectionDetails_batch_button {
+    margin-top: 21px;
+    margin-bottom: 15px;
+
+}
+.sectionDetails_button{
+    margin-left:  8px;
+}
+
+/*表格信息总条数*/
+.sectionDetails_table_total {
+    font-size: 14px;
+    margin-top: 18px;
+    margin-left: 12px;
+    float: left;
+}
+
+/*表格分页器*/
+.sectionDetails_table_pagination {
+    margin-top: 13px;
+    float: right;
+}
+
+
+.sectionDetails_free_button {
+    width: 65px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-right: 8px;
+}
+
+.sectionDetails_free_title {
+    margin-bottom: 16px;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: rgba(0,0,0,0.85);
+    line-height: 24px;
+}
+
+.sectionDetails_free_line {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 1px;
+    background-color: #E8E8E8;
+}
+
+.sectionDetails_Model_box {
+    padding: 24px;
+    width: 100%;
+    /*height: 182px;*/
+}
+
+.sectionDetails_Model_title{
+    width: 106px;
+    height: 32px;
+    float: left;
+    line-height: 32px;
+    text-align: right;
+    font-size: 14px;
+    color: rgba(0,0,0,0.85);
+}
+
+.sectionDetails_Model_content{
+    height: 32px;
+    float: left;
+    line-height: 32px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.85);
+}
+
+.sectionDetails_Model_require_status {
+    font-size: 14px;
+    color: #F5222D;
+    line-height: 32px;
+}
+
+.sectionDetails_Model_range_picker {
+    /*background: #FFFFFF;*/
+    /*border: 1px solid #D9D9D9;*/
+    /*border-radius: 4px;*/
+    width:226px;
+    height:32px;
+    /*float:left;*/
+    margin-left: 8px;
+}
+.sectionDetail_auditStatus{
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 8px;
+}

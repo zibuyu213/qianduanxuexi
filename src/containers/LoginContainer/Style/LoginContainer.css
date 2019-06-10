@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+    background-image: url('http://triplego-parking.oss-cn-beijing.aliyuncs.com/triplego_parking_manage_partner/2018-10-28/1540671778695-hGPaSGKaE8/login_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.content {
+    padding: 24px 0 90px 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.top {
+    text-align: center;
+}
+
+.header {
+    height: 52px;
+    line-height: 52px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 452px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.accountLogin {
+    text-align: center;
+    /*border-bottom: 1px rgba(217, 217, 217, 0.50) solid;*/
+    margin-bottom: 40px;
+}
+.accountLogin span{
+    display: inline-block;
+    font-size: 16px;
+    color: rgba(0,0,0,0.85);
+    line-height: 24px;
+    width: 136px;
+    text-align: center;
+    /*border-bottom: 2px #1890FF solid;*/
+    padding: 10px 5px;
+    font-family: PingFangSC-Regular;
+}
+
+.login-form-forgot {
+    float: right;
+}
+.login-form-button {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.login-form-input{
+    height: 40px;
+}
+.login-footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    opacity: 0.85;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 20px;
+}

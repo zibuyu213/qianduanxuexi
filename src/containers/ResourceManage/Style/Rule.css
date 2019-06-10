@@ -1,0 +1,183 @@
+.list_filter_input {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 256px;
+    height: 32px;
+    padding: 0 12px;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.list_filter_button {
+    width: 65px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-right: 8px;
+}
+
+.list_operation_box {
+    height: 72px;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.detail_header_status_box {
+    height: 54px;
+    /*float: right;*/
+    position: absolute;
+    bottom: 10px;
+}
+
+.detail_header_status_title {
+    width: 100%;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: right;
+    line-height: 22px;
+    /*margin-bottom: 4px;*/
+}
+
+.detail_header_status_text {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: right;
+    line-height: 28px;
+    float: left;
+}
+
+.detail_header_status_tag {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 10px 8px 0 0;
+    float: left;
+}
+
+.detail_display_card_box {
+    width: 100%;
+}
+
+.detail_display_title {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 24px;
+}
+
+.detail_display_sub_title {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+}
+
+.detail_display_content {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 22px;
+}
+
+.edit_bottom {
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    background-color: #FFFFFF;
+    padding: 12px 24px;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.detail_edit_insert_button {
+    width: 562px;
+    height: 32px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    line-height: 32px;
+    background: #FFFFFF;
+    border: 1px dashed #D9D9D9;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+
+.detail_edit_delete_button {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.detail_edit_text {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 32px;
+    height: 32px;
+    float: left;
+}
+
+.detail_edit_form {
+    margin: 0 4px;
+    float: left;
+    width: 176px;
+    height: 32px;
+    padding: 0;
+}
+
+.detail_edit_input {
+    width: 176px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.detail_single_input {
+    height: 32px;
+    line-height: 32px;
+    margin: 8px 0 16px 0;
+}
+
+.detail_edit_complex_box {
+    width: 566px;
+    background: #FFFFFF;
+    border: 1px dashed #D9D9D9;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    padding: 16px;
+}
+
+.detail_edit_complex_select {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 32px;
+    height: 32px;
+    float: left;
+    background: #F7F7F7;
+    border-radius: 4px 0 0 4px;
+}
+
+.require_status {
+    font-size: 14px;
+    color: #F5222D;
+    line-height: 22px;
+}
+
+th.column-status-charge, td.column-status-charge {
+    min-width: 150px;
+}
+
+th.column-action-charge, td.column-action-charge {
+    min-width: 150px;
+}
+
+th.column-content-time, td.column-content-time {
+    min-width: 214px;
+}
+.detail_single_input .ant-input:not(:last-child) {
+    padding-right: 60px;
+}

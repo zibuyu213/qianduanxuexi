@@ -1,0 +1,113 @@
+.holiday-setting-menu {
+    margin-bottom: 16px;
+    display: flex;
+    line-height: 32px;
+    justify-content: space-between;
+}
+.holiday-setting-calendar-menu-container {
+    overflow: hidden;
+}
+.holiday-setting-calendar-menu-container > * {
+    float: left;
+}
+.holiday-setting-calendar-menu-container-tips{
+    display: flex;
+    line-height: 22px;
+    margin-top: 10px;
+}
+.holiday-setting-calendar-status {
+    overflow: hidden;
+    margin-right: 40px;
+}
+.holiday-setting-calendar-status li {
+    float: left;
+    line-height: 28px;
+}
+.holiday-setting-calendar-status li:last-child {
+    margin-left: 24px;
+}
+.holiday-setting-calendar-status li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    vertical-align: 2px;
+    margin-right: 8px;
+}
+.holiday-setting-calendar-status li.work-day::before {
+    background: rgba(0, 0, 0, 0.65);
+
+}
+.holiday-setting-calendar-status li.holiday::before {
+    background: #FF4D4F;
+}
+.holiday-setting-calendar-extra {
+    padding: 0 24px;
+}
+.holiday-setting-calendar-has-extra .calendar-date-extra {
+    background: rgba(24, 144, 255, 0.15);
+    border-radius: 0px 4px 4px 0px;
+}
+.holiday-setting-calendar-has-extra .calendar-date-container {
+    border: 1px solid #E9E9E9;
+    border-radius: 4px;
+}
+.holiday-setting-calendar-has-extra .calendar-date-table {
+    border: none;
+}
+.holiday-setting-calendar-extra-title {
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+}
+.holiday-setting-calendar-extra-title span {
+    padding-left: 8px;
+}
+.holiday-setting-calendar-extra-card {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.holiday-setting-calendar-extra-card span {
+    display: inline-block;
+    background: #1890FF;
+    width: 86px;
+    height: 86px;
+    line-height: 86px;
+    color: #ffffff;
+    font-size: 48px;
+    border-radius: 2px;
+}
+.holiday-setting-calendar-extra-label {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+}
+.holiday-setting-calendar-extra-option {
+    margin-top: 10px;
+}
+
+/*动态增减表单样式*/
+.dynamic-delete-button {
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+    font-size: 24px;
+    color: #999;
+    transition: all .3s;
+}
+.dynamic-delete-button:hover {
+    color: #40a9ff;
+}
+.dynamic-delete-button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.dynamic-delete-a{
+    font-family: PingFangSC-Regular;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    color: #1890FF;
+    transition: all .3s;
+}

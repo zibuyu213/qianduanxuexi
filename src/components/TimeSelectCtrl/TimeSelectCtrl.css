@@ -1,0 +1,43 @@
+.timeselect-box {
+    width: 326px;
+    /*height: 62px;*/
+}
+
+.title-box {
+    height: 22px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.85);
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+.require-status {
+    font-size: 14px;
+    color: #F5222D;
+    line-height: 22px;
+}
+
+.time-box{
+    width: 326px;
+    /*height: 32px;*/
+}
+
+.picker-form {
+    float: left;
+}
+
+.picker {
+    width: 144px;
+    height: 32px;
+    background: #FFFFFF;
+    /*border: 1px solid rgba(0,0,0,0.15);*/
+    border-radius: 4px;
+
+}
+
+.picker-splice {
+    margin: 20px 10px 0 10px;
+    width: 12px;
+    border: 1px solid #D8D8D8;
+    float: left;
+}

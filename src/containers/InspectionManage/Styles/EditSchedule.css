@@ -1,0 +1,74 @@
+.schedule {
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.schedulePopover .ant-popover-inner-content {
+    padding: 0 !important;
+}
+
+.scheduleMenu {
+    border: none;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.scheduleMenu li {
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scheduleMenu i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customTableTitle {
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+}
+
+th .ant-table-header-column{
+    width: 100%;
+}
+
+.scheduleText {
+    min-height: 81px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(24, 144, 255, 0.75);
+}
+
+.overdueSchedule {
+    background: rgba(24, 144, 255, 0.45);
+}
+
+.restScheduleText {
+    background-color: #F3F3F3;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.afterTodayRestScheduleText {
+    background-color: #F3F3F3;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.inspectorTD {
+    padding: 0 !important;
+    cursor: pointer;
+    min-width: 100px !important;
+}
+
+.inspector {
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

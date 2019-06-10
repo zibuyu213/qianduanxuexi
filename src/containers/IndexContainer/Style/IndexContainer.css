@@ -1,0 +1,162 @@
+.flex {
+    display: flex
+}
+
+.flex-direction-column {
+    flex-direction: column
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+.logo {
+    text-align: center;
+    color: #FFFFFF;
+    height: 64px;
+    line-height: 64px;
+    font-size: 18px;
+    background: #002140;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    margin-left: -12px;
+    vertical-align: middle;
+}
+
+.logo-img-collapsed {
+    width: 32px;
+    height: 32px;
+    margin: 0 12px;
+    vertical-align: middle;
+}
+
+.logo-span {
+    vertical-align: middle;
+}
+
+.logo-span-collapsed {
+    display: none;
+}
+
+.user-info {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    float: right;
+    margin-right: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.user-info:hover {
+    color: #108ee9;
+}
+
+.exit-button {
+    position: absolute;
+    width: 112px;
+    height: 42px;
+    line-height: 42px;
+    right: -25px;
+    bottom: -45px;
+    color: #010101;
+    font-size: 14px;
+    text-align: left;
+
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.index-menu-icon {
+    width: 14px;
+    height: 14px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.index-menu-icon-collapsed {
+    width: 14px;
+    height: 14px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.index-menu-span {
+    vertical-align: middle;
+}
+
+.index-menu-span-collapsed {
+    display: none;
+}
+
+.selectCompany .ant-select-selection {
+    border: none;
+    border-radius: 0;
+}
+
+.selectCompany .ant-select-selection-selected-value {
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 28px;
+}
+
+.head_one_company {
+    width: 300px;
+    position: absolute;
+    top: -2px;
+    margin-left: 57px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.85)
+
+}
+
+.head_one_company > .ant-selet-focused {
+
+}
+
+.menu-title {
+    display: flex;
+    text-align: center;
+    padding: 4px 24px 14px 24px;
+    white-space: nowrap;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+
+.menu-title-text {
+    flex: 1;
+    padding: 0 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+}
+
+.menu-title-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: auto;
+}

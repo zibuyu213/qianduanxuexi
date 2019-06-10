@@ -1,0 +1,62 @@
+.sectionResource_batch_button{
+    margin-left: 8px;
+}
+.sectionResource_button{
+    margin-left: 8px;
+}
+/*选择*/
+.sectionResource_selection {
+    margin-bottom: 16px;
+}
+/*表格审核状态小圆点*/
+.sectionResource_auditStatus{
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 8px;
+}
+.sectionResource_auditStatus_stay{
+    background: #1890FF;
+}
+.sectionResource_auditStatus_success{
+    background:#52C41A;
+}
+
+.sectionResource_auditStatus_fail{
+    background:#D0021B;
+}
+/*表格暂无数据*/
+.sectionResource_table .ant-table-placeholder .anticon{
+    display: none;
+}
+/*表格信息总条数*/
+.sectionResource_table_total{
+    font-size: 14px;
+    color: rgba(0,0,0,0.45);
+    margin-top: 18px;
+    margin-left: 12px;
+    float: left;
+}
+/*表格分页器*/
+.sectionResource_table_pagination{
+    margin-top: 13px;
+    float: right;
+}
+
+.sectionResource_table_time_text{
+    font-size: 14px;
+    color: rgba(0,0,0,0.65);
+    text-align: left;
+    height: 22px;
+    line-height: 22px;
+}
+ .sectionResource_button_add{
+     width:82px;
+     float:left
+}
+
+ .addForm {
+     padding: 24px;
+ }

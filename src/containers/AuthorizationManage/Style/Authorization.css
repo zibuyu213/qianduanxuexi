@@ -1,0 +1,60 @@
+.author_search_button {
+    width: 65px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+.author_button_add {
+    height: 32px;
+    margin-right: 8px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+}
+
+th.column-departmentName, td.column-departmentName {
+    width: 330px
+}
+
+th.column-userName, td.column-userName {
+    width: 314px
+}
+.column-userName{
+    width: 282px
+}
+.table-operation{
+    width: 168px
+}
+
+th.column-personNumber, td.column-personNumber {
+    flex: 4
+}
+
+th.column-roles, td.column-roles {
+    max-width: 603px;
+}
+
+th.column-action, td.column-action {
+    width: 216px;
+    /*text-align: center !important;*/
+}
+
+th.column-choose, td.column-choose {
+    width: 168px;
+    /*text-align: center !important;*/
+}
+
+th.column-permission, td.column-permission {
+    width: 800px;
+}
+
+.userManage-search-form .ant-form-item {
+    display: flex;
+}
+
+.userManage-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+}
+
+.userManage-search-form .ant-form-item-label {
+    min-width: 70px;
+}

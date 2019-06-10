@@ -1,0 +1,75 @@
+.reportTabs {
+    margin-top: 20px;
+    margin-bottom: -16px;
+}
+
+.reportTabs a {
+    display: inline-block;
+    font-size: 14px;
+    /*color: #1890FF;*/
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 10px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.reportTabs .active {
+    border-bottom: 2px solid #1890FF;
+    transform-origin: right;
+}
+
+.reportTabs .inactive {
+    color: rgba(0,0,0,0.65);
+}
+
+.invoice-manage-form .ant-form-item {
+    display: flex;
+}
+
+.invoice-manage-form .ant-form-item-control-wrapper {
+    flex: 1;
+}
+
+.invoice-manage-form .ant-form-item-label {
+    min-width: 70px;
+}
+
+th.column-invoice-number,td.column-invoice-number{
+    width: 150px;
+}
+.column-invoice-number {
+    color:#1890ff;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+th.column-invoice-title,td.column-invoice-title{
+    width: 330px;
+}
+.column-invoice-title {
+    width: 330px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.titleTextAlignRight{
+    width: 200px;
+}
+.titleTextAlignRight .ant-table-column-sorters{
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+.titleTextAlignRight .ant-table-column-sorter{
+    position: initial !important;
+    margin-left: 15px;
+}
+.InspectionOtherCol{
+    min-width: 200px;
+}
+.InspectionPayAmount{
+    min-width: 200px;
+}

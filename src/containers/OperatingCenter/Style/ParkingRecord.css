@@ -1,0 +1,86 @@
+.parking_search_form .ant-form-item-label{
+    /*text-align: left;*/
+}
+.parking_table{
+    margin-top: 20px;
+}
+
+.selection_radio_button{
+    height: 32px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+/*表格状态小圆点*/
+.status{
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 8px;
+}
+.parking_status_stay{
+    background: #66BD5C;
+}
+.parking_status_over{
+    background: rgba(0,0,0,0.25);
+}
+.parking_status_arrearage{
+    background: #F5222D;
+}
+.parking_status_refunding{
+    background: #1890FF;
+}
+
+/*停车记录详情*/
+.baseInfo label{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0,0,0,0.85);
+    line-height: 22px;
+}
+
+.baseInfo span{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0,0,0,0.65);
+    line-height: 22px;
+}
+.statusText{
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: rgba(0,0,0,0.85);
+    text-align: right;
+    line-height: 28px;
+    vertical-align: middle;
+}
+
+/*申诉处理详情Tabs*/
+.appeal-tabs {
+    margin-top: 20px;
+}
+
+.appeal-tabs a {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 10px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.appeal-tabs .active {
+    color: #1890FF;
+    border-bottom: 2px solid #1890FF;
+    transform-origin: right;
+}
+.dashedStyle{
+    margin: 10px 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+}

@@ -1,0 +1,9 @@
+.extraChargeDetailCol{
+    margin-top: 10px;
+    flex: 1;
+}
+.extraChargeDetailCol div{
+    font-size: 14px;
+    color: rgba(0,0,0,0.65);
+    line-height: 22px;
+}

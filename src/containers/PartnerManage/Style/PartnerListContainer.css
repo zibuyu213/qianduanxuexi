@@ -1,0 +1,211 @@
+.partnerList_container {
+
+}
+
+/*搜索*/
+.partnerList_search_button {
+    width: 65px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+/*审核*/
+.partnerDetail_check_button {
+    width: 65px;
+    height: 32px;
+    margin-left: 32px;
+    vertical-align: bottom;
+}
+
+/*重新编辑*/
+.partnerDetail_edit_button {
+    width: 88px;
+    height: 32px;
+    margin-left: 8px;
+    vertical-align: bottom;
+}
+
+/*选择*/
+.partnerList_selection {
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.partnerList_button_add {
+    width: 82px;
+    height: 32px;
+    float: left;
+}
+
+.partnerList_selection_radioGroup {
+    height: 32px;
+    float: right;
+}
+
+.partnerList_selection_radio {
+    height: 32px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+/*表格审核状态小圆点*/
+.partnerList_auditStatus {
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 8px;
+}
+
+.partnerList_auditStatus_stay {
+    background: #1890FF;
+}
+
+.partnerList_auditStatus_success {
+    background: #52C41A;
+}
+
+.partnerList_auditStatus_fail {
+    background: #D0021B;
+}
+
+/*表格暂无数据*/
+.partnerList_table .ant-table-placeholder .anticon {
+    display: none;
+}
+
+/*表格信息总条数*/
+.partnerList_table_total {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-top: 18px;
+    margin-left: 12px;
+    float: left;
+}
+
+/*表格分页器*/
+.partnerList_table_pagination {
+    margin-top: 13px;
+    float: right;
+}
+
+/*详情页内容块*/
+.partnerDetail-col-key {
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+}
+
+.partnerDetail-col-value {
+    line-height: 22px;
+    /*min-width: 260px;*/
+    max-width: 75%;
+    color: rgba(0, 0, 0, 0.65);
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+/*状态*/
+.partner-detail_state {
+    float: right;
+    width: 100px;
+    text-align: right;
+    margin-top: -23px;
+}
+
+.partnerDetail-state-title {
+    height: 28px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.partnerDetail-state-dot {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    /*width: 6px;*/
+    /*margin-right: 8px;*/
+}
+
+.partnerDetail-contract-file {
+    cursor: pointer;
+    /*width: 100%;*/
+}
+
+.partnerDetail-contract-download {
+    display: none;
+}
+
+.partnerDetail-contract-file:hover .partnerDetail-contract-download {
+    display: inline-block;
+    font-size: 14px;
+    color: #1890FF;
+    padding: 0 6px;
+    /*cursor: pointer;*/
+}
+
+/*新建合作方-底部固定*/
+.newpartner-bottom-fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 56px;
+    line-height: 56px;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, .03);
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+    padding: 0 24px;
+    z-index: 9;
+    text-align: right;
+}
+
+/*modal*/
+.partner-modal-title {
+    width: 70px;
+    text-align: right;
+    line-height: 30px;
+    /*margin-bottom: 32px*/
+}
+
+.partner-modal-tips {
+    display: flex;
+    margin-bottom: 32px;
+    text-align: center;
+    white-space: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.partner-modal-tips-line {
+    flex: 1;
+    height: 1px;
+    background: #EBEBEB;
+    margin: auto;
+}
+
+.partner-modal-tips-content {
+    flex: 1;
+    /*width: 165px;*/
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
+}
+
+.partner-detail-header {
+    /*height: 32px;*/
+    line-height: 32px;
+}
+
+.partner-limit-height .ant-form-item-control {
+    height: 32px;
+}
+
+.partner-upload .ant-upload-list-item {
+    display: inline-block;
+}
+
+.partner-upload .ant-upload-list-item-info {
+    padding-right: 24px;
+}

@@ -1,0 +1,73 @@
+.calendar-date-container {
+    display: flex;
+}
+.calendar-date-table {
+    flex: 2;
+    position: relative;
+    border-collapse:separate;
+    border-spacing:0;
+    border: 1px solid #E9E9E9;
+    border-radius: 4px;
+}
+.calendar-date-table td,
+.calendar-date-table th {
+    padding:0;
+}
+.calendar-date-header {
+
+}
+.calendar-date-header th {
+    text-align: center;
+    border-bottom: 1px solid #E9E9E9;
+    height: 55px;
+}
+.calendar-date-body tr {
+}
+.calendar-date-body td {
+    position: relative;
+    cursor: pointer;
+    min-width: 86px;
+    height: 86px;
+    text-align: center;
+    border-bottom: 1px solid #E9E9E9;
+    color: rgba(0, 0, 0, 0.25);
+}
+.calendar-date-body td.cur-month {
+    color: #000000;
+}
+.calendar-date-body td.holiday {
+    color: #FF4D4F;
+}
+
+.calendar-date-body td:hover {
+    background: #4aa8ff;
+    color: #ffffff;
+    border-radius: 2px;
+}
+.calendar-date-body tr td.selected {
+    background: #1890FF;
+    border-radius: 2px;
+    color: #ffffff;
+}
+.calendar-date-body tr td:active {
+    background: #0a87fb;
+    border-radius: 2px;
+    color: #ffffff;
+}
+.calendar-date-body tr:last-child td {
+    border-bottom: none;
+}
+.calendar-date-body tr td.today:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #1890FF;
+    border-radius: 2px;
+}
+
+.calendar-date-extra {
+    flex: 1;
+}
