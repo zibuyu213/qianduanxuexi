@@ -17,8 +17,14 @@ export default class Today extends Component {
             a:0,
             b:0,
             c:0,
+<<<<<<< HEAD
             dadas:'',
             42534:0,
+=======
+            d:0,
+            e:0,
+            i:0,
+>>>>>>> 86bc4e8892015372063acf86d1d6f7cae216ec9e
           },
         data :[],
         bztdata : [],
