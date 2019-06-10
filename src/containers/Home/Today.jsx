@@ -14,6 +14,11 @@ export default class Today extends Component {
         super(props);
         this.state = {
           firstdata:{
+            a:0,
+            b:0,
+            c:0,
+            dadas:'',
+            42534:0,
           },
         data :[],
         bztdata : [],
