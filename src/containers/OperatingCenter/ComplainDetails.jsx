@@ -19,6 +19,7 @@ export default class ComplainDetails extends Component {
         this.state = {
             show:false,//显示处理页面
             switchover:1, //切换处理页面
+            nengbunengtian:true,
         }
     }
 
@@ -90,11 +91,23 @@ export default class ComplainDetails extends Component {
 
     //提交按钮
     tijiao(e) {
-      alert("已提交");
+        alert("已提交");
     }
-
+    gaibian(value){
+        if(value.target.value=='3'){
+            this.setState({
+                nengbunengtian:false,
+            })
+        }else{
+            this.setState({
+                nengbunengtian:true,
+            })
+        }
+    }
     render () {
-        const {show, switchover, } = this.state;
+        const {show, switchover,nengbunengtian,} = this.state;
+
+        const {getFieldDecorator} = this.props.form;
 
         const formItemLayout = {
             labelCol: {span: 5},
@@ -117,11 +130,13 @@ export default class ComplainDetails extends Component {
                                 <Row>
                                     <Col span={8}>
                                         <FormItem label='投诉状态' {...formItemLayout}>
-                                            <Select defaultValue="1" onChange={this.switchover.bind(this)}>
-                                                <Option value="1">结案</Option>
-                                                <Option value="2">生成工单</Option>
-                                                <Option value="3">关闭</Option>
-                                            </Select>
+                                            {getFieldDecorator('ComplainStatus')(
+                                                <Select defaultValue="1" onChange={this.switchover.bind(this)}>
+                                                    <Option value="1">结案</Option>
+                                                    <Option value="2">生成工单</Option>
+                                                    <Option value="3">关闭</Option>
+                                                </Select>
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
@@ -135,16 +150,20 @@ export default class ComplainDetails extends Component {
                                 <Row style={{marginTop:"25px"}}>
                                     <Col span={8}>
                                         <FormItem label="常用意见" {...formItemLayout}>
-                                            <Select defaultValue="1"  onChange={handleChange}>
-                                                <Option value="1">请选择意见分类</Option>
-                                            </Select>
+                                            {getFieldDecorator('OpinionClassify')(
+                                                <Select defaultValue="1"  onChange={handleChange}>
+                                                    <Option value="1">请选择意见分类</Option>
+                                                </Select>
+                                            )}
                                         </FormItem>
                                     </Col>
                                     <Col span={6} style={{marginLeft:"10px"}}>
                                         <FormItem>
-                                            <Select defaultValue="1"  onChange={handleChange}>
-                                                <Option value="1">请选择意见分类</Option>
-                                            </Select>
+                                            {getFieldDecorator('OpinionTitle')(
+                                                <Select defaultValue="1"  onChange={handleChange}>
+                                                    <Option value="1">请选择意见标题</Option>
+                                                </Select>
+                                            )}
                                         </FormItem>
                                     </Col>
                                     <Col span={6} style={{marginLeft:"10px"}}>
@@ -154,19 +173,23 @@ export default class ComplainDetails extends Component {
                                 <Row>
                                     <Col span={8} >
                                         <FormItem label="结案内容" {...formItemLayout}>
-                                            <TextArea rows={5}
-                                                placeholder=""
-                                            />
+                                            {getFieldDecorator('CloseContent')(
+                                                <TextArea rows={5}
+                                                    placeholder=""
+                                                />
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col span={8} >
                                         <FormItem label="给用户发短信" {...formItemLayout}>
-                                            <Radio.Group defaultValue={1}>
-                                                <Radio value={1}>否</Radio>
-                                                <Radio value={2}>是</Radio>
-                                            </Radio.Group>
+                                            {getFieldDecorator('SendMessage')(
+                                                <Radio.Group defaultValue={1}>
+                                                    <Radio value={1}>否</Radio>
+                                                    <Radio value={2}>是</Radio>
+                                                </Radio.Group>
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
@@ -193,18 +216,22 @@ export default class ComplainDetails extends Component {
                                 <Row>
                                     <Col span={8}>
                                         <FormItem label='投诉状态' {...formItemLayout}>
-                                            <Select defaultValue="1" onChange={this.switchover.bind(this)}>
-                                                <Option value="1">结案</Option>
-                                                <Option value="2">生成工单</Option>
-                                                <Option value="3">关闭</Option>
-                                            </Select>
+                                            {getFieldDecorator('ComplainStatus')(
+                                                <Select defaultValue="1" onChange={this.switchover.bind(this)}>
+                                                    <Option value="1">结案</Option>
+                                                    <Option value="2">生成工单</Option>
+                                                    <Option value="3">关闭</Option>
+                                                </Select>
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col span={8}>
                                         <FormItem label="工单标题" {...formItemLayout}>
-                                            <Input placeholder="" />
+                                            {getFieldDecorator('WorkOrderTitle')(
+                                                <Input placeholder="" />
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
@@ -213,22 +240,26 @@ export default class ComplainDetails extends Component {
                                     <Col span={8}>
                                         <Col span={12} style={{marginRight:"-30%"}}>
                                             <FormItem label="优先级" {...formItemLayout}>
-                                                <Select defaultValue="1"  onChange={handleChange}>
-                                                    <Option value="1">请选择</Option>
-                                                    <Option value="2">一般</Option>
-                                                    <Option value="3">紧急</Option>
-                                                    <Option value="4">立即处理</Option>
-                                                </Select>
+                                                {getFieldDecorator('Priority')(
+                                                    <Select defaultValue="1"  onChange={handleChange}>
+                                                        <Option value="1">请选择</Option>
+                                                        <Option value="2">一般</Option>
+                                                        <Option value="3">紧急</Option>
+                                                        <Option value="4">立即处理</Option>
+                                                    </Select>
+                                                )}
                                             </FormItem>
                                         </Col>
                                         <Col span={12} style={{float:"right"}}>
                                             <FormItem label="指派" {...formItemLayout}>
-                                                <Select defaultValue="1"  onChange={handleChange}>
-                                                    <Option value="1">请选择</Option>
-                                                    <Option value="2">XX小姐</Option>
-                                                    <Option value="3">张三</Option>
-                                                    <Option value="4">李四</Option>
-                                                </Select>
+                                                {getFieldDecorator('Designate')(
+                                                    <Select defaultValue="1"  onChange={handleChange}>
+                                                        <Option value="1">请选择</Option>
+                                                        <Option value="2">XX小姐</Option>
+                                                        <Option value="3">张三</Option>
+                                                        <Option value="4">李四</Option>
+                                                    </Select>
+                                                )}
                                             </FormItem>
                                         </Col>
                                     </Col>
@@ -236,9 +267,11 @@ export default class ComplainDetails extends Component {
                                 <Row>
                                     <Col span={8} >
                                         <FormItem label="工单内容" {...formItemLayout}>
-                                            <TextArea rows={5}
-                                                placeholder=""
-                                            />
+                                            {getFieldDecorator('WorkOrderContent')(
+                                                <TextArea rows={5}
+                                                    placeholder=""
+                                                />
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
@@ -264,25 +297,29 @@ export default class ComplainDetails extends Component {
                             <Form>
                                 <Row>
                                     <Col span={8}>
-                                        <FormItem label='工单状态' {...formItemLayout}>
-                                            <Select defaultValue="1" onChange={this.switchover.bind(this)}>
-                                                <Option value="1">结案</Option>
-                                                <Option value="2">生成工单</Option>
-                                                <Option value="3">关闭</Option>
-                                            </Select>
+                                        <FormItem label='投诉状态' {...formItemLayout}>
+                                            {getFieldDecorator('ComplainStatus')(
+                                                <Select defaultValue="1" onChange={this.switchover.bind(this)}>
+                                                    <Option value="1">结案</Option>
+                                                    <Option value="2">生成工单</Option>
+                                                    <Option value="3">关闭</Option>
+                                                </Select>
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col span={8} >
                                         <FormItem label="关闭原因" {...formItemLayout}>
-                                            <Radio.Group defaultValue={1}>
-                                                <Radio value={1}>无效内容</Radio>
-                                                <Radio value={2}>问题不存在</Radio>
-                                                <Radio value={3}>
-                                                    <Input placeholder="请输入原因" />
-                                                </Radio>
-                                            </Radio.Group>
+                                            {getFieldDecorator('ClosureReason')(
+                                                <Radio.Group defaultValue={1} onChange={(value)=>{this.gaibian(value)}}>
+                                                    <Radio value={1}>无效内容</Radio>
+                                                    <Radio value={2}>问题不存在</Radio>
+                                                    <Radio value={3}>
+                                                        <Input disabled={nengbunengtian} placeholder="请输入原因" />
+                                                    </Radio>
+                                                </Radio.Group>
+                                            )}
                                         </FormItem>
                                     </Col>
                                 </Row>
@@ -328,101 +365,45 @@ export default class ComplainDetails extends Component {
                             <Col span={20}>
                                 <Col span={8}>
                                     <label style={{float:"left", marginTop:12,}}>投诉分类：</label>
-                                    <div style={
-                                        {
-                                            float:"left",
-                                            width:"70%",
-                                            background:"#F5F5F5", borderWidth:"1", borderStyle: "solid", borderColor: "rgba(215, 215, 215, 1)", borderRadius: "0",
-                                        }
-                                    }>
-                                        <span disabled >泊位异常</span>
-                                    </div>
+                                    <span disabled >泊位异常</span>
                                 </Col>
                                 <Col span={24} style={{marginTop:12,}}>
                                     <label style={{float:"left", marginTop:12,}}>投诉内容：</label>
-                                    <div style={
-                                        {
-                                            float:"left",
-                                            width:"56.7%", height:100,
-                                            background:"#F5F5F5", borderWidth:"1", borderStyle: "solid", borderColor: "rgba(215, 215, 215, 1)", borderRadius: "0",
-                                        }
-                                    }>
-                                        <span disabled>
-                                            泊位异常无法缴费，被交警贴条了
-                                        </span>
-                                    </div>
+                                    <span disabled>
+                                        泊位异常无法缴费，被交警贴条了
+                                    </span>
                                 </Col>
                                 <Col span={24} style={{marginTop:12,}}>
                                     <Col span={8}>
                                         <label style={{float:"left",marginTop:12,marginLeft:14,}}>泊位号：</label>
-                                        <div style={
-                                            {
-                                                float:"left",
-                                                width:"70%",
-                                                background:"#F5F5F5", borderWidth:"1", borderStyle: "solid", borderColor: "rgba(215, 215, 215, 1)", borderRadius: "0",
-                                            }
-                                        }>
-                                            <span disableds>
-                                                22222
-                                            </span>
-                                        </div>
+                                        <span disableds>
+                                            22222
+                                        </span>
                                     </Col>
                                     <Col span={8}>
                                         <label style={{float:"left", marginTop:12, marginLeft:14,}}>车牌号：</label>
-                                        <div style={
-                                            {
-                                                float:"left",
-                                                width:"70%",
-                                                background:"#F5F5F5", borderWidth:"1", borderStyle: "solid", borderColor: "rgba(215, 215, 215, 1)", borderRadius: "0",
-                                            }
-                                        }>
-                                            <span disableds>
-                                                22222
-                                            </span>
-                                        </div>
+                                        <span disableds>
+                                            22222
+                                        </span>
                                     </Col>
                                 </Col>
                                 <Col span={8} style={{marginTop:12,}}>
                                     <label style={{float:"left",marginTop:12,}}>停车时间：</label>
-                                    <div style={
-                                        {
-                                            float:"left",
-                                            width:"70%",
-                                            background:"#F5F5F5", borderWidth:"1", borderStyle: "solid", borderColor: "rgba(215, 215, 215, 1)", borderRadius: "0",
-                                        }
-                                    }>
-                                        <span disableds>
-                                            22222
-                                        </span>
-                                    </div>
+                                    <span disableds>
+                                        22222
+                                    </span>
                                 </Col>
                                 <Col span={8}  style={{marginTop:12,}}>
                                     <label style={{float:"left",marginTop:12,}}>联系电话：</label>
-                                    <div style={
-                                        {
-                                            float:"left",
-                                            width:"70%",
-                                            background:"#F5F5F5", borderWidth:"1", borderStyle: "solid", borderColor: "rgba(215, 215, 215, 1)", borderRadius: "0",
-                                        }
-                                    }>
-                                        <span disableds>
-                                            22222
-                                        </span>
-                                    </div>
+                                    <span disableds>
+                                        22222
+                                    </span>
                                 </Col>
                                 <Col span={24} style={{marginTop:12,}}>
                                     <label style={{float:"left", marginTop:12, marginLeft:28,}}>照片：</label>
-                                    <div style={
-                                        {
-                                            float:"left",
-                                            width:100, height:100,
-                                            background:"#F5F5F5", borderWidth:"1", borderStyle: "solid", borderColor: "rgba(215, 215, 215, 1)", borderRadius: "0",
-                                        }
-                                    }>
-                                        <span disableds>
-                                            <img />
-                                        </span>
-                                    </div>
+                                    <span disableds>
+                                        <img />
+                                    </span>
                                 </Col>
                                 <Col span={8} style={{marginTop:12,}}>
                                     <label>投诉来源：</label>

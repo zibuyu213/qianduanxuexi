@@ -40,6 +40,7 @@ export default class ComplainWorkOrderDetails extends Component {
       if (type === HttpClientImmidIot.requestSuccess) {
           this.setState({
               datum: data.datum,
+              lists:data.lists,
           })
       } else {
           //失败----做除了报错之外的操作
@@ -88,7 +89,7 @@ export default class ComplainWorkOrderDetails extends Component {
 
       const listItem=lists.map((str) =>
           <Timeline.Item>
-              {str.time}{str.content}
+              {str.shijian}{str.neirong}
           </Timeline.Item>
       );
       const gongdanchuli=()=>{
