@@ -13,13 +13,15 @@ const { Option } = Select;
 const { TextArea } = Input;
 
 
-export default class ComplainDetails extends Component {
+class ComplainDetails extends Component {
     constructor (props) {
         super(props);
         this.state = {
             show:false,//显示处理页面
             switchover:1, //切换处理页面
             nengbunengtian:true,
+            // complainInformation:{},
+
         }
     }
 
@@ -57,6 +59,7 @@ export default class ComplainDetails extends Component {
                 data1: data.data1,
                 data: data.data,
                 detailData: data,
+                // complainInformation:data.complainInformation,
             });
         } else {
             //失败----做除了报错之外的操作
@@ -117,6 +120,20 @@ export default class ComplainDetails extends Component {
         function handleChange(value) {
           console.log(`selected ${value}`);
         }
+
+        //投诉信息
+        const complainInformation = {
+            ComplainClassify:"泊位异常",//投诉分类
+            ComplainContent:"泊位异常无法缴费，被交警贴条了",//投诉内容
+            TheBerthNumber:"122341",//泊位号
+            LicensePlateNumber:"粤A6666",//车牌号
+            StoppingTime:"2019-1-1",//停车时间
+            PhoneNumber:"1383838438",//联系电话
+            Photo:"img",//照片
+            ComplaineSource:"手机APP",//投诉来源
+            ComplaineTime:"2019-1-2",//投诉时间
+        };
+
 
         const chulijilu=()=>{
             if(show){
@@ -235,7 +252,6 @@ export default class ComplainDetails extends Component {
                                         </FormItem>
                                     </Col>
                                 </Row>
-
                                 <Row>
                                     <Col span={8}>
                                         <Col span={12} style={{marginRight:"-30%"}}>
@@ -342,6 +358,10 @@ export default class ComplainDetails extends Component {
             }
         }
 
+
+
+
+
         return (
             <div className='page'>
                 <div className="page-header">
@@ -364,57 +384,49 @@ export default class ComplainDetails extends Component {
                         <Row>
                             <Col span={20}>
                                 <Col span={8}>
-                                    <label style={{float:"left", marginTop:12,}}>投诉分类：</label>
-                                    <span disabled >泊位异常</span>
+                                    <label>投诉分类：</label>
+                                    <span>{complainInformation.ComplainClassify}</span>
                                 </Col>
-                                <Col span={24} style={{marginTop:12,}}>
-                                    <label style={{float:"left", marginTop:12,}}>投诉内容：</label>
-                                    <span disabled>
-                                        泊位异常无法缴费，被交警贴条了
+                                <Col span={24}>
+                                    <label>投诉内容：</label>
+                                    <span>
+                                        {complainInformation.ComplainContent}
                                     </span>
                                 </Col>
-                                <Col span={24} style={{marginTop:12,}}>
+                                <Col span={24}>
                                     <Col span={8}>
-                                        <label style={{float:"left",marginTop:12,marginLeft:14,}}>泊位号：</label>
-                                        <span disableds>
-                                            22222
-                                        </span>
+                                        <label style={{marginLeft:14,}}>泊位号：</label>
+                                        <span>{complainInformation.TheBerthNumber}</span>
                                     </Col>
                                     <Col span={8}>
-                                        <label style={{float:"left", marginTop:12, marginLeft:14,}}>车牌号：</label>
-                                        <span disableds>
-                                            22222
-                                        </span>
+                                        <label style={{marginLeft:14,}}>车牌号：</label>
+                                        <span>{complainInformation.LicensePlateNumber}</span>
                                     </Col>
                                 </Col>
-                                <Col span={8} style={{marginTop:12,}}>
-                                    <label style={{float:"left",marginTop:12,}}>停车时间：</label>
-                                    <span disableds>
-                                        22222
-                                    </span>
+                                <Col span={8}>
+                                    <label>停车时间：</label>
+                                    <span>{complainInformation.StoppingTime}</span>
                                 </Col>
-                                <Col span={8}  style={{marginTop:12,}}>
-                                    <label style={{float:"left",marginTop:12,}}>联系电话：</label>
-                                    <span disableds>
-                                        22222
-                                    </span>
+                                <Col span={8}>
+                                    <label>联系电话：</label>
+                                    <span>{complainInformation.PhoneNumber}</span>
                                 </Col>
                                 <Col span={24} style={{marginTop:12,}}>
                                     <label style={{float:"left", marginTop:12, marginLeft:28,}}>照片：</label>
-                                    <span disableds>
-                                        <img />
+                                    <span>
+                                        {complainInformation.Photo}
                                     </span>
                                 </Col>
                                 <Col span={8} style={{marginTop:12,}}>
                                     <label>投诉来源：</label>
                                     <span>
-                                        手机APP
+                                        {complainInformation.ComplaineSource}
                                     </span>
                                 </Col>
                                 <Col span={8} style={{marginTop:12,}}>
                                     <label>投诉时间：</label>
                                     <span>
-                                        2019-05-05 21：20
+                                        {complainInformation.ComplaineTime}
                                     </span>
                                 </Col>
                             </Col>
@@ -432,3 +444,7 @@ export default class ComplainDetails extends Component {
 
     }
 }
+
+
+const WrapperAbnormalParkingAlarm = Form.create()(ComplainDetails);
+export default WrapperAbnormalParkingAlarm;
