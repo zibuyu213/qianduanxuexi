@@ -63,7 +63,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.6.0",
     "postcss-safe-parser": "4.0.1",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-highcharts": "^16.0.2",
     "react.eval": "^1.4.13",
     "resolve": "1.10.0",
